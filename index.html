@@ -2,48 +2,34 @@
 <html>
 <head>
   <style>
-        #pooptitle:after{
+    #innerpoop{
+background-color: #c0c0c0;
+}
+    
+    #poop{
+background: linear-gradient(90deg,navy,#1084d0);
       border: 2px outset black;
 width: 400px;
-      background-color: #c0c0c0;
-padding-top: 1px;
-padding-left: 5px;
+padding-top: 2px;
+padding-bottom: 5px;
+padding-left: 3px;
 }
-<<<<<<< HEAD
-    #pooptitle{
-      background: linear-gradient(90deg,navy,#1084d0);
-
-      padding-top: -5px;
-      padding-left: -3px;
-=======
-    
-    #poop:before{
-background: linear-gradient(90deg,navy,#1084d0);
-content: "poop";
-padding-top: 3px;
-padding-bottom: 3px;
-padding-left: 2px;
->>>>>>> parent of 03f06ff (Update index.html)
-}
-    
-
   </style>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script>
   $( function() {
-    $( "#pooptitle" ).draggable();
+    $( "#poop" ).draggable();
   } );
   </script>
   </head>
 <body>
 <div id="poop">
-  <div id="pooptitle">
-    sex
-      </div>
-
+  poop
+<div id="innerpoop">
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+  </div>
   </div>
 </body>
 </html>
