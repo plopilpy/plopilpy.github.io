@@ -2,15 +2,14 @@
 <html>
 <head>
   <style>
-    #poop{
-border: 2px outset black;
-width: 400px;
+    #innerpoop{
 background-color: #c0c0c0;
 }
     
-    #poop:before{
+    #poop{
 background: linear-gradient(90deg,navy,#1084d0);
-content: "poop";
+      border: 2px outset black;
+width: 400px;
 padding-top: 2px;
 padding-bottom: 5px;
 padding-left: 3px;
@@ -26,8 +25,11 @@ padding-left: 3px;
   </head>
 <body>
 <div id="poop">
+  poop
+<div id="innerpoop">
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+  </div>
   </div>
 </body>
 </html>
