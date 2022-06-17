@@ -27,3 +27,5 @@ $.ajax({
         // `data` will not be JSON
     }
 });
+
+$('.slatenews-app').html(ncontent5)
