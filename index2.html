@@ -66,13 +66,22 @@ width: 250px;
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script>
-    $( "#banner" ).attr(src, 'banner/banner2.html');
+  $( function() {
+    $( "#poop" ).draggable();
+  } );
   </script>
   </head>
 <body>
   
   <h1 class="spinny">THIS PAGE IS A WORK IN PROGRESS</h1>
   
-<iframe id='banner' src="banner/banner1.html"></iframe>
+<div id="poop">
+  <div class="title">Drag </div>
+<div id="innerpoop">
+<p>Hello World :^)</p>
+<p>This window was made DRAGGABLE with jQuery!</p>
+  <button>test</button>
+  </div>
+  </div>
 </body>
 </html>
