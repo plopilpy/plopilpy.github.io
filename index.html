@@ -73,6 +73,7 @@ var timer = setInterval(function(){
   if(i >= paths.length){
    clearInterval(timer);     // Stop the timer
    return;                   // Exit the function
+   timer;
   }
   document.getElementById("banner").src = paths[i++]; // Sete the path to the current counter and then increase the counter
 }, 500);
