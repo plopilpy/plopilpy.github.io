@@ -67,7 +67,6 @@ width: 250px;
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script>
 
-var banner = document.getElementById("banner");
 var i = 0;
 var timer = setInterval(function(){
   // If we've reached the end of the array...
@@ -78,6 +77,7 @@ var timer = setInterval(function(){
   banner.src = paths[i++]; // Sete the path to the current counter and then increase the counter
 }, 1000);
 
+var banner = document.getElementById("banner");
 var paths =
 [ `banner/banner1.html`, `banner/banner2.html`, `banner/banner3.html`, `banner/banner4.html`, `banner/banner5.html`, `banner/banner6.html`, `banner/banner7.html`, `banner/banner8.html`, `banner/banner9.html`, `banner/banner10.html`, `banner/banner11.html`, `banner/banner12.html`, `banner/banner13.html`, `banner/banner14.html`];
 
