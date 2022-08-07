@@ -72,7 +72,7 @@ var timer = setInterval(function(){
   // If we've reached the end of the array...
   if(i >= paths.length){
    clearInterval(timer);     // Stop the timer
-   timer;                   // Exit the function
+   return;                   // Exit the function
   }
   document.getElementById("banner").src = paths[i++]; // Sete the path to the current counter and then increase the counter
 }, 500);
