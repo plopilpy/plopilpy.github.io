@@ -24,7 +24,7 @@
         cycles: 1000,
         autolock: false,
     }).ready(function (fs, main) {
-      fs.extract("./package.zip").then(function () {
+      fs.extract("./win95.zip").then(function () {
         main(["-c", "AUTOEXEC.BAT"]).then(function (ci) {
             window.ci = ci;
         });
