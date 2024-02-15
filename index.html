@@ -22,83 +22,158 @@
       0% {transform: rotateX(0deg)}
      50% {transform: rotateX(180deg)}
       100% {transform: rotateX(360deg)}
-}
+    }
+
+    @keyframes bounce-up-down{
+      from {transform: translateY(25%)}
+      to {transform: translateY(-25%)}
+      
+    }
 
     .spinny{
       animation-name: spinny;
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
-}
-    
-    #innerpoop{
-background-color: #c0c0c0;
-margin-top: -20px;
-            font-family: "Pixelated MS Sans Serif",Arial;
-    font-size: 11px;
-margin-left: -3px;
-    padding-left: 4px;
-    padding-top: 1px;
-    padding-bottom: 10px;
-    }
-    
-    button{
-box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-}
-    
-    #poop{
-background: linear-gradient(90deg,navy,#1084d0);
-      border: 2px outset lightgrey;
-width: 250px;
-      padding-left: 3px;
-      padding-bottom: 0;
+      display: inline-block;
 }
 
-    #poop .title{
-      font-weight: bold;
-  color: white;
-          font-size: 11px;
-        font-family: "Pixelated MS Sans Serif", Arial;
-    margin-bottom: 20px;
-    padding-bottom: 4px;
-    margin-top: 2px;
-    }
+.bouncing{
+  animation: bounce-up-down 0.5s infinite ease-in-out alternate;
+  display: inline-block;
+  margin-right: -7px;  
+}
+
+body{
+  font-size: 22pt;
+  background: grey;
+}
+
+#plopilpy1{
+  animation-delay: 0.1s;
+}
+#plopilpy2{
+  animation-delay: 0.2s;
+}
+#plopilpy3{
+  animation-delay: 0.3s;
+}
+#plopilpy4{
+  animation-delay: 0.4s;
+}
+#plopilpy5{
+  animation-delay: 0.5s;
+}
+#plopilpy6{
+  animation-delay: 0.6s;
+}
+#plopilpy7{
+  animation-delay: 0.7s;
+}
+#plopilpy8{
+  animation-delay: 0.8s;
+}
+
+/*.glowing{
+  text-shadow: 0 0 2px white, 0 0 5px white, 0 0 25px white, 0 0 95px white, 0 0 95px white, 0 0 95px white, 0 0 95px white;
+}*/
   </style>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-  <script>
-/*
-var i = 0;
-var timer = setInterval(function(){
-  // If we've reached the end of the array...
-  if(i >= paths.length){
-    i = 0;
-  }
-  document.getElementById("banner").src = paths[i++]; // Sete the path to the current counter and then increase the counter
-}, 600);
 
-var paths =
-[ `banner/banner1.html`, `banner/banner2.html`, `banner/banner3.html`, `banner/banner4.html`, `banner/banner5.html`, `banner/banner6.html`, `banner/banner7.html`, `banner/banner8.html`, `banner/banner9.html`, `banner/banner10.html`, `banner/banner11.html`, `banner/banner12.html`, `banner/banner13.html`, `banner/banner14.html`];
-*/
-/*
-var i = 0;
-var timer = setInterval(function(){
-  // If we've reached the end of the array...
-  if(i >= paths.length){
-    i = 0;
-  }
-  $( "#banner" ).load( paths[i++] ); // Sete the path to the current counter and then increase the counter
-}, 400);
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-var paths =
-[ `banner/banner1.html`, `banner/banner2.html`, `banner/banner3.html`, `banner/banner4.html`, `banner/banner5.html`, `banner/banner6.html`, `banner/banner7.html`, `banner/banner8.html`, `banner/banner9.html`, `banner/banner10.html`, `banner/banner11.html`, `banner/banner12.html`, `banner/banner13.html`, `banner/banner14.html`];
-*/
+<style>
+  .roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
-  </script>
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+</style>
   </head>
-<body>
-  <h1>Hello, I'm <div class="spinny">plopilpy</div></h1>
-
-<!--<center><div id='banner'></div></center>-->
+<body class="roboto-regular">
+  <center><p class="glowing">Hello, I'm 
+    
+    
+    <font class="bouncing" id="plopilpy1">p</font>
+    <font class="bouncing" id="plopilpy2">l</font>
+    <font class="bouncing" id="plopilpy3">o</font>
+    <font class="bouncing" id="plopilpy4">p</font>
+    <font class="bouncing" id="plopilpy5">i</font>
+    <font class="bouncing" id="plopilpy6">l</font>
+    <font class="bouncing" id="plopilpy7">p</font>
+    <font class="bouncing" id="plopilpy8">y</font>
+  
+  
+  
+  </p></center>
 </body>
 </html>
