@@ -30,6 +30,12 @@
       
     }
 
+    @keyframes fly-in-top{
+      from {transform: translateY(-900%)}
+      to {transform: translateY(0%)}
+      
+    }
+
     .spinny{
       animation-name: spinny;
       animation-duration: 2s;
@@ -41,51 +47,109 @@
 .bouncing{
   animation: bounce-up-down 0.5s infinite ease-in-out alternate;
   display: inline-block;
-  margin-right: -7px;  
+  margin-right: -24px;  
 }
+.fly-in-top{
+  animation: fly-in-top 1s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  transform: translateY(-900%);
+}
+
+@keyframes background-morph{
+      0% {background-position: 0% 0%;}
+      100% {background-position: 20% 120%;}
+      
+    }
 
 body{
-  font-size: 22pt;
-  background: grey;
+  font-size: 16pt;
+  font-family: 'Dot Matrix', sans-serif;
+  background-image: radial-gradient(#1d1d1d 50%, #333);
+  background-size: 20px 20px !important;
+  animation: background-morph 15s linear infinite;
 }
 
-#plopilpy1{
+.delay1{
   animation-delay: 0.1s;
 }
-#plopilpy2{
+.delay2{
   animation-delay: 0.2s;
 }
-#plopilpy3{
+.delay3{
   animation-delay: 0.3s;
 }
-#plopilpy4{
+.delay4{
   animation-delay: 0.4s;
 }
-#plopilpy5{
+.delay5{
   animation-delay: 0.5s;
 }
-#plopilpy6{
+.delay6{
   animation-delay: 0.6s;
 }
-#plopilpy7{
+.delay7{
   animation-delay: 0.7s;
 }
-#plopilpy8{
+.delay8{
   animation-delay: 0.8s;
 }
 
-/*.glowing{
-  text-shadow: 0 0 2px white, 0 0 5px white, 0 0 25px white, 0 0 95px white, 0 0 95px white, 0 0 95px white, 0 0 95px white;
-}*/
+.glowing{
+  text-shadow: 0 0 2px white, 0 0 5px white, 0 0 25px white;
+  color: white;
+}
+.glow-green{
+  text-shadow: 0 0 2px #0f0, 0 0 5px #0f0, 0 0 25px #0f0;
+  color: #0f0;
+}
+
+.centertext{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.centertext-narrow{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.whitetext{
+  color: white;
+}
+.polishtext{
+  background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+background-image: linear-gradient(white 50%, #d10000 51%);
+}
+.armeniantext{
+  background-clip: text;
+color: transparent;
+background-image: linear-gradient(#c81d29 50%, #0247dd 51%, #0247dd 60%, #c88900 61%);
+}
   </style>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+
+<link href="https://fonts.cdnfonts.com/css/dot-matrix" rel="stylesheet">
 <style>
+
+.workbench-main {
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+}
   .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -159,21 +223,45 @@ body{
 }
 </style>
   </head>
-<body class="roboto-regular">
-  <center><p class="glowing">Hello, I'm 
+<body>
+  <center>
+
+  <font size="7" class="workbench-main">
+    <b><p class="glowing fly-in">Hello, I'm 
     
-    
-    <font class="bouncing" id="plopilpy1">p</font>
-    <font class="bouncing" id="plopilpy2">l</font>
-    <font class="bouncing" id="plopilpy3">o</font>
-    <font class="bouncing" id="plopilpy4">p</font>
-    <font class="bouncing" id="plopilpy5">i</font>
-    <font class="bouncing" id="plopilpy6">l</font>
-    <font class="bouncing" id="plopilpy7">p</font>
-    <font class="bouncing" id="plopilpy8">y</font>
+  <font class="glow-green" style="margin-left: 4px;">
+    <font class="fly-in-top delay1"><font class="bouncing delay1">p</font></font>
+    <font class="fly-in-top delay2"><font class="bouncing delay2">l</font></font>
+    <font class="fly-in-top delay3"><font class="bouncing delay3" style="margin-right: -18px;">o</font></font>
+    <font class="fly-in-top delay4"><font class="bouncing delay4">p</font></font>
+    <font class="fly-in-top delay5"><font class="bouncing delay5">i</font></font>
+    <font class="fly-in-top delay6"><font class="bouncing delay6">l</font></font>
+    <font class="fly-in-top delay7"><font class="bouncing delay7">p</font></font>
+    <font class="fly-in-top delay8"><font class="bouncing delay8">y</font></font>
+  </font>
   
   
+  </p></b></font>
   
-  </p></center>
+</center>
+<br>
+<br>
+<br>
+<br>
+
+<div class="centertext-narrow whitetext">
+About me:
+<ul>
+  <li>Web developer (Fluent in HTML, CSS, JS)</li>
+  <li>Programmer (Learning Python, Java and C++)</li>
+  <li>Other interests: 3D modelling, graphic design</li>
+  <li>Born in Canada, Background is <font class="polishtext">Polish</font> &amp; <font class="armeniantext">Armenian</font></li>
+</ul>
+</div>
+<div class="centertext whitetext">
+  Examples of my epic programming skills: <br>
+<img src="">
+</div>
+
 </body>
 </html>
