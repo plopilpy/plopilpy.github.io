@@ -1,0 +1,23 @@
+' Create a VBScript to shut down the computer
+Set objShell = CreateObject("WScript.Shell")
+
+strShutdownScript = "Set objShell = CreateObject(""WScript.Shell"")" & vbCrLf & _
+                    "objShell.Run ""shutdown -s -t 0"", 0, True"
+
+strScriptPath = objShell.SpecialFolders("Desktop") & "\shutdown.vbs"
+
+Set objFSO = CreateObject("Scripting.FileSystemObject")
+Set objFile = objFSO.CreateTextFile(strScriptPath, True)
+objFile.Write strShutdownScript
+objFile.Close
+
+' Copy the VBScript to the Windows startup folder
+strStartupFolder = objShell.SpecialFolders("Startup")
+strDestination = strStartupFolder & "\shutdown.vbs"
+
+If Not objFSO.FileExists(strDestination) Then
+    objFSO.CopyFile strScriptPath, strDestination
+    MsgBox "Shutdown script copied to Startup folder successfully.", vbInformation, "Script Copied"
+Else
+    MsgBox "Shutdown script already exists in Startup folder.", vbExclamation, "Script Exists"
+End If
