@@ -56,18 +56,19 @@
   transform: translateY(-900%);
 }
 
-@keyframes background-morph{
-      0% {background-position: 0% 0%;}
-      100% {background-position: 20% 120%;}
-      
-    }
-
 body{
   font-size: 16pt;
   font-family: 'Dot Matrix', sans-serif;
-  background-image: radial-gradient(#1d1d1d 50%, #333);
-  background-size: 20px 20px !important;
-  animation: background-morph 15s linear infinite;
+  background: linear-gradient(339deg, #002722, #040027);
+    background-size: 400% 400%;
+
+    animation: background-morph 20s ease infinite;
+}
+
+@keyframes background-morph {
+    0%{background-position:23% 0%}
+    50%{background-position:78% 60%}
+    100%{background-position:23% 0%}
 }
 
 .delay1{
@@ -221,6 +222,18 @@ background-image: linear-gradient(#c81d29 50%, #0247dd 51%, #0247dd 60%, #c88900
   font-weight: 900;
   font-style: italic;
 }
+a{
+  color: #0f0;
+}
+a:hover{
+  color: #00bb00;
+}
+a:visited{
+  color: #07a5cc;
+}
+a:visited:hover{
+  color: #006786;
+}
 </style>
   </head>
 <body>
@@ -258,9 +271,9 @@ About me:
   <li>Born in Canada, Background is <font class="polishtext">Polish</font> &amp; <font class="armeniantext">Armenian</font></li>
 </ul>
 </div>
-<div class="centertext whitetext">
-  Examples of my epic programming skills: <br>
-<img src="">
+<div class="centertext-narrow whitetext">
+  Examples of my programming skills: <br>
+<a href="img">Test</a>
 </div>
 
 </body>
