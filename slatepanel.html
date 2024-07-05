@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src="./slatepanel.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>poo</title>
+    </head>
+<body>
+    <style>
+body{
+    background: url("./img/sunnysky.png");
+    background-size: cover; 
+}
+    @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+#newslist p:not(b p){
+margin-top: -8px;
+margin-bottom: 9px;
+}
+#newslist p:not(b p):last-child{
+margin-bottom: 13px;
+}
+#pageselector{
+margin-top: -10px;
+margin-bottom: 6px;
+}
+#pageselector a{
+margin-left: 2px;
+}
+#feedselector, #pageselector{
+width: 98%;
+text-align: left;
+}
+.sw-button, #feedspacer{
+width: 100%;
+}
+#weather-temp, #weather-icon, #wind-speed{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+font-size: 4em;
+}
+#weather-icon{
+  width: 1.4em;
+  display: inline-block;
+}
+#wind-speed{
+margin-top: -8px;
+font-size: 1.4em;
+}
+</style>
+<!--Weather Begin-->
+<center><span id="weather-icon">Loading weather...</span><span id="weather-temp"></span>
+<br><span id="wind-speed"></span>
+</center>
+<!--Weather End-->
+
+
+<!--RSS Begin-->
+<ol id="newslist">
+</ol>
+<center>
+<div id="pageselector">
+<b>Page:</b>
+<a href="javascript:minmax=0;getnews();" id="page1">1</a>
+<a href="javascript:minmax=5;getnews();" id="page2">2</a>
+</div>
+<div id="feedselector">
+<table id="feedspacer" cellspacing="0" cellpadding="0"><tr>
+<td><button class="w96-button sw-button" onclick="newsurl='http:\/\/feeds.bbci.co.uk/news/world/rss.xml'; getnews();">BBC (World)</button></td>
+<td><button class="w96-button sw-button" onclick="newsurl='http:\/\/feeds.bbci.co.uk/news/world/us_and_canada/rss.xml'; getnews();">BBC (America)</button></td>
+<td><button class="w96-button sw-button" onclick="newsurl='http:\/\/feeds.bbci.co.uk/news/technology/rss.xml'; getnews();">BBC (Technology)</button></td>
+<td><button class="w96-button sw-button" onclick="newsurl='https:\/\/hnrss.org/newest'; getnews();">HackerNews</button></td>
+<td><button class="w96-button sw-button" onclick="newsurl='http:\/\/www.fsf.org/static/fsforg/rss/news.xml'; getnews();">FSF</button></td>
+<td><button class="w96-button sw-button" onclick="newsurl='https:\/\/stallman.org/rss/rss.xml'; getnews();">RMS</button></td>
+</tr></table>
+</div>
+</center>
+<script>
+var newsurl = 'http://feeds.bbci.co.uk/news/world/rss.xml'
+</script>
+    
+</body>
+</html>

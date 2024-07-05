@@ -234,6 +234,22 @@ a:visited{
 a:visited:hover{
   color: #006786;
 }
+
+
+#nats-reveal{
+  white-space: nowrap;
+  width: 0;
+  display: inline-block;
+  font-size: 0.5em;
+  vertical-align: middle;
+  margin-bottom: 0.5em;
+  margin-left: -0.9em;
+  filter:opacity(0.1);
+  transition: filter 1s;
+}
+#nats-reveal:hover{
+  filter:opacity(0.5);
+}
 </style>
   </head>
 <body>
@@ -265,23 +281,36 @@ a:visited:hover{
 <div class="centertext-narrow whitetext maininfo">
 About me:
 <ul>
-  <li>Web developer (Fluent in HTML, CSS, JS)</li>
-  <li>Programmer (Learning Python, Java and C++)</li>
-  <li>Other interests: 3D modelling, graphic design</li>
-  <li>Born in Canada, Background is <font class="polishtext">Polish</font> &amp; <font class="armeniantext">Armenian</font></li>
+  <li>Web developer (HTML, CSS, JS)</li>
+  <li>Programmer (Python, Java, PHP, learning C &amp; C++)</li>
+  <li>Other interests: 3D modelling, graphic design, electronics</li>
+  <li>Born in Canada, I'm <span id="nats"><font class="polishtext">Polish</font> &amp; <font class="armeniantext">Armenian</font></span> <span id="nats-reveal">&lt;---(only mentioning my background as an excuse to do cool coloured text like this)</span></li>
 </ul>
 </div>
-<div class="centertext-narrow whitetext">
-  Examples of my programming skills: <br>
-<a href="img">Test</a>
+<div class="centertext-narrow whitetext maininfo-two">
+  Examples of my projects: <br>
+<ul>  
+  <li><a href="./projects/turtle-waves.png">Sin/cos graphing</a>: A program I wrote to graph sin and cos waves in Python using the Turtle graphics library.</li>
+  <li><a href="./projects/wifi-clock.png">Arduino Wifi Clock (Unfinished)</a>: A clock running powered by an Arduino and a Raspberry Pi. Uses Python and Arduino C++ to fetch and display the time/weather.</li>
+  <li><a href="./projects/wifi-clock.png">SlatePanel</a>: A sleek news/weather bulletin written in HTML, CSS, and JS.</li>
+  <font color="yellow">-------------------------------------------------------------------<br>More projects will be added soon! Site is still under construction.</font>
+
+</ul>
 </div>
 
-<script src="./glitch.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./ScrambleText.js"></script>
 <script>
-  $('.maininfo').glitch({
-	    charTime: 13
-	});
+var element,scrambleText;
+
+// you can start the effect whenever you want
+element = document.querySelector( '.maininfo' );
+scrambleText = new ScrambleText( element, { timeOffset : 7 }).play();
+scrambleText.start();
+
+element = document.querySelector( '.maininfo-two' );
+scrambleText = new ScrambleText( element, { timeOffset : 6 } ).play();
+scrambleText.start();
+
 </script>
 </body>
 </html>
