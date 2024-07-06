@@ -60,7 +60,7 @@ getnews();
 
 async function getweather() {
     var sw_config = `{
-        "location": "Saint+Etienne",
+        "location": "Etobicoke",
         "unit": "m"
     }`
     var sw_config_parsed = parent.JSON.parse(sw_config);
