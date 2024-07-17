@@ -1,0 +1,47 @@
+{
+    "statusCode": 200,
+    "result": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b4/IBM_Thinkpad_365XD_w_External_Floppy_disk_drive.jpg",
+        "name": "Windows 95",
+        "alt": "Windows 95",
+        "tag": "Computers"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Steve_Ballmer_2014.jpg",
+        "name": "Steve Ballmer",
+        "alt": "Steve Ballmer",
+        "tag": "People"
+      },
+      {
+        "src": "https://static.wikia.nocookie.net/xbox/images/7/72/Bill_gates_in_2000.jpg/revision/latest?cb=20220107153309",
+        "name": "Bill Gates",
+        "alt": "Bill Gates",
+        "tag": "People"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Red_Hat_for_DEC_Alpha.jpg",
+        "name": "Linux Red Hat",
+        "alt": "Linux Red Hat",
+        "tag": "Computers"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Richard_Stallman_Belfort.jpg",
+        "name": "Richard M. Stallman",
+        "alt": "Richard M. Stallman",
+        "tag": "People"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/LinusTorvalds.jpg",
+        "name": "Linus Torvalds",
+        "alt": "Torvalds",
+        "tag": "People"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg",
+        "name": "Tabby",
+        "alt": "Tabby",
+        "tag": "Cat"
+      }
+    ]
+  }
