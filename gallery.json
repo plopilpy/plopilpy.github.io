@@ -38,9 +38,9 @@
         "tag": "People"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg",
-        "name": "Tabby",
-        "alt": "Tabby",
+        "src": "https://cdn.jsdelivr.net/gh/plopilpy/plopilpy.github.io/gato.png",
+        "name": "Gato",
+        "alt": "Gato",
         "tag": "Cat"
       }
     ]
