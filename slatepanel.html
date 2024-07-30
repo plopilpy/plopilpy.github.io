@@ -15,6 +15,10 @@
 body{
     background: url("./img/sunnysky.png");
     background-size: cover; 
+    font-family: "Sarabun", sans-serif;
+    font-weight: 200;
+    text-shadow: 1px 1px 4px black;
+    color: white !important;
 }
     @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
@@ -31,6 +35,7 @@ margin-bottom: 6px;
 }
 #pageselector a{
 margin-left: 2px;
+color: lightskyblue;
 }
 #feedselector, #pageselector{
 width: 98%;
@@ -54,16 +59,15 @@ margin-top: -8px;
 font-size: 1.4em;
 }
 .ntitle,li::marker, li a{
-    font-family: "Sarabun", sans-serif;
-  font-weight: 400;
   color: white;
   font-size: 14pt;
 }
 .ncontent{
-    font-family: "Sarabun", sans-serif;
-    font-weight: 400;
   line-height: 75%;
 }
+/* .feed0, .feed1, .feed2, .feed3, .feed4, .feed5, .feed6, .feed7, .feed8, .feed9, .feed10{
+  
+} */
 </style>
 <!--Weather Begin-->
 <center><span id="weather-icon">Loading weather...</span><span id="weather-temp"></span>

@@ -41,10 +41,10 @@ function getnews() {
 
                     if (minmax !== 0) {
                         $("#page1").attr("style", "")
-                        $("#page2").attr("style", "color: black; text-decoration: none; cursor: url('system/resource/cursors/default.png'),auto;")
+                        $("#page2").attr("style", "color: white; text-decoration: none; cursor: url('system/resource/cursors/default.png'),auto;")
                     } else if (minmax == 0) {
                         $("#page2").attr("style", "")
-                        $("#page1").attr("style", "color: black; text-decoration: none; cursor: url('system/resource/cursors/default.png'),auto;")
+                        $("#page1").attr("style", "color: white; text-decoration: none; cursor: url('system/resource/cursors/default.png'),auto;")
                     }
                 }
             }, 10);
